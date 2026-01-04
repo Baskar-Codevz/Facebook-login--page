@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook page</title>
+    <style>
+     body {
+        background: #f0f2f5;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 60px;
+    }
+
+    .login-box{
+        background: white;
+        width: 300px;
+        padding: 14px;
+        margin:14px;   
+        min-height: 100px;
+        border-radius: 12px;
+        
+    }
+    .login-box input{
+        border-radius: 3px;
+        width:260px;
+        padding:15px;
+        margin:14px 0;
+        border-style:solid 1px;
+        border-width: 1px;
+        border-color:white black;
+        font-size:17px ;
+
+    }
+    .failure{
+        width:260px;
+        background: blue;
+        padding:15px;
+        border: none;
+        border-radius: 7px;
+        color:#f0f2f5;
+        font-size:20px;
+        margin-left: 10px;
+        cursor:pointer;
+
+    }
+       .failure:hover{
+        background:blue;
+        background-color: rgb(42, 42, 191);
+       }
+    hr{
+        border-style: solid ;
+        color:#f0f2f5;
+    }
+
+    /* page text */
+
+    .head{
+        color:blue;
+        font-size:80px;
+        margin-bottom: 10px;
+    }
+    p{
+    
+        color:black;
+        font-size: 20px;
+    }
+
+    .forgot{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .create{
+       background: rgb(31, 146, 31);
+       text-align: center;
+       margin-left: 65px;
+       color:#f0f2f5;
+       padding:15px;
+       font-size: 17px;
+       border:none;
+       border-radius: 5px;
+       text-shadow: white 5px;
+       cursor:pointer;
+    }
+    .create:hover{
+        background:rgb(31, 146, 31) ;
+        background-color: green;
+
+    }
+    
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="facebook">
+         <h1 class="head">Facebook</h1>
+         <p>facebook helps to cconnect and share with <br>people in your life </p>
+       </div> 
+      <div class="login-box">
+        <form>
+            <input type="text" id="email" placeholder="Email or Phone number">
+            <br>
+             <input type="text" id="password" placeholder="Password">
+        </form>
+        <button class="failure" href="#">
+            Login
+        </button>
+    
+        <div class="forgot">
+            <a href="#">Forgotten password ?</a>
+        </div>
+        <hr>
+        <div  >
+            <button class="create">Create New Account</button>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+</body>
+</html>
